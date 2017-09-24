@@ -1,0 +1,52 @@
+<html>
+<style>
+body{
+
+  background-color: skyblue;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: verdana;
+  color:white;
+}
+form{
+  background-color: skyblue;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: verdana;
+  color:white;
+}
+strong{
+  text-shadow:  2px 2px #000000;  font-size: 400%;
+}
+h1{ margin-top: 5%;
+  font-size: 150%;
+
+}
+h2{  text-shadow:  2px 2px #000000;}
+input,label{
+  text-align: center;
+
+}
+a {
+text-decoration: none;
+}
+.te{  text-shadow:  2px 2px #000000; }
+</style>
+
+<strong>Message Page</strong>
+
+<h1>Hi <%= qs.to%>!!!</h1>
+<h2> <%= qs.who%><p> has a message for you "<%= qs.mssg%>"</p></h2>
+
+<br></br>
+<br></br><div class="te">
+Link to this page <a href="http://localhost:3000/msg/<%= qs.who%>/<%= qs.to%>/<%= qs.mssg%>">http://192.168.43.97:3000/msg/<%= qs.who%>/<%= qs.to%>/<%= qs.mssg%></a>
+</div>
+<br></br>
+<br></br>
+
+<a href="http://localhost:3000/"><div style="margin-left:47%;background-color:white;height:12%;width:7%;font-size7%;text-align:center;
+box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); line-height: 500%;color:skyblue; border-radius:50%;">
+<b>Create Yours</b>
+</div></a>
+</html>
